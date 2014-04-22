@@ -19,3 +19,4 @@ done
 
 popd
 
+unlink ~/.git
