@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/pooya/Projects/humaniod/src/tools/contrib/rqt_reconfigure'
+let g:netrw_dirhist_2='/home/pooya/Projects/humaniod/src/tools/contrib/rqt_reconfigure/src'
+let g:netrw_dirhist_3='/home/pooya/Projects/humaniod/src/tools/contrib/rqt_reconfigure/src/rqt_reconfigure'
+let g:netrw_dirhist_4='/media/MULTIBOOT/java.1/b/META-INF'
+let g:netrw_dirhist_5='/mnt/c/@Data/Projects/humanoid/src/tools/contrib/dynamic_reconfigure/src/dynamic_reconfigure'
+let g:netrw_dirhist_6='/mnt/c/@Data/Projects/humanoid/src/robot/perception/color_mapping/src'
+let g:netrw_dirhist_7='/etc/gdm/PostLogin'
+let g:netrw_dirhist_8='/etc/privoxy'
+let g:netrw_dirhist_9='/home/pooya/.dotfiles/.vim'
