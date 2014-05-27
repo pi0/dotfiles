@@ -8,14 +8,16 @@ if [ ! -d $base ] ; then
         sudo -E git --git-dir=$base/.git pull;
     fi
 
-rm -rv ~/.aria2
-rm -rv ~/.vim
-touch ~/.z
+rm -rv $HOME/.aria2
+rm -rv  $HOME/.vim
+touch  $HOME/.z
 
-for f in $base/.* ; do
+pushd $base
+for f in .* ; do
 	echo "Installing $f..."
 	ln -sf $base/$f $HOME/$f
 done
+popd
 unlink $HOME/.git
 
 #chsh -s /bin/zsh
