@@ -36,12 +36,8 @@ set noeol
 set modeline
 set modelines=4
 
-" Enable per-directory .vimrc files and disable unsafe commands in them
-set exrc
-set secure
-
-" Enable line numbers
-set number
+" Line numbers
+" set number on
 
 " Enable syntax highlighting
 syntax on
@@ -102,7 +98,8 @@ function! StripWhitespace()
 	call setpos('.', save_cursor)
 	call setreg('/', old_query)
 endfunction
-noremap <leader>ss :call StripWhitespace()<CR>
+
+ noremap <leader>ss :call StripWhitespace()<CR>
 
 " Save a file as root (,W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
+ noremap <leader>W :w !sudo tee % > /dev/null<CR>

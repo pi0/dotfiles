@@ -1,9 +1,10 @@
-alias tors="pkill tor;tor"
 alias s2="sudo -E zsh"
-alias sss="sudo shutdown -h now"
-alias rrr="sudo reboot -h"
+
 alias apti="sudo apt-get install"
 alias apts="apt-cache search"
+alias	yui="yum install"
+alias yuu="yum update"
+
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."

@@ -8,10 +8,10 @@ DISABLE_AUTO_UPDATE=true
 ZSH_THEME="pygmalion"
 
 # Command aliases
-source .aliases
+source $HOME/.aliases
 
 # Environment variable exports
-source .exports
+source $HOME/.exports
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
