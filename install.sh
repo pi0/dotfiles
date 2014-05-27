@@ -14,3 +14,6 @@ done
 unlink ~/.git
 
 chsh -s /bin/zsh
+
+
+echo "Done! :)"
