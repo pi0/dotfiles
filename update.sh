@@ -1,6 +1,8 @@
 #!/bin/bash
-pushd ~/.dotfiles
+base = /usr/share/dotfiles
+
+pushd $base
 git pull origin master
-upgrade_oh_my_zsh
-./install.sh
 popd
+upgrade_oh_my_zsh
+$base/install.sh
