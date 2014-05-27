@@ -10,16 +10,14 @@ if [ ! -d $base ] ; then
 
 rm -rv ~/.aria2
 rm -rv ~/.vim
-
 touch ~/.z
 
 for f in $base/.* ; do
 	echo "Installing $f..."
-	ln -sf $base/$f ~/$f
+	ln -sf $base/$f $HOME/$f
 done
-unlink ~/.git
+unlink $HOME/.git
 
-chsh -s /bin/zsh
-
+#chsh -s /bin/zsh
 
 echo "Done! :)"
