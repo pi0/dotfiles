@@ -13,7 +13,7 @@ rm -rv  $HOME/.vim
 touch  $HOME/.z
 
 for f in $base/.* ; do
-	$name=${f##*/}
+	$name=`basename $f`
 	echo "Installing $name..."
 	ln -sf $f $HOME/$name
 done
