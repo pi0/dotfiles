@@ -11,4 +11,4 @@ My Unix config files!
         else
             git --git-dir=$base pull;
         fi
-    base/install.sh
+    $base/install.sh
