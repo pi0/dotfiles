@@ -7,8 +7,8 @@ My Unix config files!
 
     base=/usr/share/dotfiles;
     if [ ! -d $base ] ; then
-            sudo git clone https://github.com/pi0/dotfiles.git $base ;
+            sudo -E git clone https://github.com/pi0/dotfiles.git $base ;
         else
-            sudo git --git-dir=$base pull;
+            sudo -E git --git-dir=$base/.git pull;
         fi
-    $base/install.sh
+    $base/install.sh;
