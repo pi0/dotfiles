@@ -17,7 +17,6 @@ for f in $base/.* ; do
 	echo "Installing $name..."
 	ln -sf $f $HOME/$name
 done
-popd
 unlink $HOME/.git
 
 #chsh -s /bin/zsh
