@@ -4,9 +4,11 @@ Yet another dotfiles project !
 My Unix config files!
 
 ## how to install
-    sudo if [ ! -d "$base/.oh-my-zsh" ] ; then
-            git clone https://github.com/pi0/dotfiles.git /usr/share/dotfiles ;
+
+    base=/usr/share/dotfiles;
+    sudo if [ ! -d $base ] ; then
+            git clone https://github.com/pi0/dotfiles.git $base ;
         else
-            git --git-dir=/usr/share/dotfiles pull;
+            git --git-dir=$base pull;
         fi
-    /usr/share/dotfiles/install.sh
+    base/install.sh
