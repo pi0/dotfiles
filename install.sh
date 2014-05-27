@@ -12,10 +12,10 @@ rm -rv $HOME/.aria2
 rm -rv  $HOME/.vim
 touch  $HOME/.z
 
-pushd $base
-for f in .* ; do
-	echo "Installing $f..."
-	ln -sf $base/$f $HOME/$f
+for f in $base/.* ; do
+	$name=${f##*/}
+	echo "Installing $name..."
+	ln -sf $f $HOME/$name
 done
 popd
 unlink $HOME/.git
