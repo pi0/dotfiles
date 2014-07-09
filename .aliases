@@ -5,7 +5,12 @@ alias apts="apt-cache search"
 alias	yui="yum install"
 alias yuu="yum update"
 
+alias dotupdate="cd /usr/share/dotfiles;sudo git pull;cd -"
+alias dotsave="cd /usr/share/dotfiles && sudo sh -c 'git add --all && git commit && git push' && cd -"
+
 alias hh=hash -r
+
+alias du=du -hs
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
