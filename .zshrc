@@ -7,6 +7,9 @@ DISABLE_AUTO_UPDATE=true
 # Set name of the oh-my-zsh theme to load.
 ZSH_THEME="pygmalion"
 
+# Local bin
+PATH=$PATH:~/bin
+
 # Command aliases
 source $HOME/.aliases
 
@@ -38,6 +41,9 @@ source $HOME/.exports
 # VCS as dirty. This makes repository status check for large repositories much,
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Wine
+ WINEARCH=win32
 
 # Uncomment following line if you want to  shown in the command execution time stamp 
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|

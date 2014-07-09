@@ -1,4 +1,4 @@
-" set the Molokai theme
+" set the theme
 colorscheme pablo
 
 " Make Vim more useful
@@ -99,7 +99,26 @@ function! StripWhitespace()
 	call setreg('/', old_query)
 endfunction
 
- noremap <leader>ss :call StripWhitespace()<CR>
+noremap <leader>ss :call StripWhitespace()<CR>
 
-" Save a file as root (,W)
- noremap <leader>W :w !sudo tee % > /dev/null<CR>
+" Save a file as root :)
+cmap W! w !sudo tee % > /dev/null<CR>:e!<CR><CR> 
+
+" tab navigation like firefox
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+
+" tab navigation like VIM !
+nnoremap zgg  :tabfirst<CR>
+nnoremap zG  :tablast<CR>
+nnoremap zj  :tabnext<CR>
+nnoremap zk  :tabprev<CR>
+nnoremap zn  :tabnew<CR>
+nnoremap zm  :tabclose<CR>
+
+" Arabic support ( Farsi is very buggy :( )
+noremap <C-S-a> :set invarabic<CR>
+
+" Reload vim config
+cnoreabbrev reload :so %<CR>

@@ -5,6 +5,7 @@ alias apts="apt-cache search"
 alias	yui="yum install"
 alias yuu="yum update"
 
+alias hh=hash -r
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
