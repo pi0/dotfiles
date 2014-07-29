@@ -10,6 +10,9 @@ ZSH_THEME="pygmalion"
 # Local bin
 PATH=$PATH:~/bin
 
+#Android SDK
+PATH=$PATH:/opt/android_sdk/platform-tools:/opt/android_sdk/tools
+
 # Command aliases
 source $HOME/.aliases
 
