@@ -4,6 +4,7 @@ base=/usr/share/dotfiles
 
 rm -rv $HOME/.aria2
 rm -rv  $HOME/.vim
+mkdir -p ~/.vim/{tmp,backup}
 touch  $HOME/.z
 
 for f in $base/.* 

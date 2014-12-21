@@ -81,6 +81,10 @@ set title
 " Show the (partial) command as it? being typed
 set showcmd
 
+" Set swap and backupdir
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
+
 " Use relative line numbers
 " if exists("&relativenumber")
 "	set relativenumber
