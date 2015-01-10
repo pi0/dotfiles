@@ -4,7 +4,7 @@ alias apti="sudo apt-get install"
 alias apts="apt-cache search"
 alias	yui="yum install"
 alias yuu="yum update"
-
+alias oracle_dl='aria2c --header="Cookie: oraclelicense=a"'
 alias dotupdate="cd /usr/share/dotfiles;sudo git pull;cd -"
 alias dotsave="cd /usr/share/dotfiles && sudo sh -c 'git add --all && git commit && git push' && cd -"
 
