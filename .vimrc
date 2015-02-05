@@ -1,5 +1,5 @@
 " set the theme
-colorscheme pablo
+colorscheme delek
 
 " Make Vim more useful
 set nocompatible
