@@ -46,7 +46,7 @@ source $HOME/.exports
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Wine
- WINEARCH=win32
+WINEARCH=win32
 
 # Uncomment following line if you want to  shown in the command execution time stamp 
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
@@ -56,6 +56,6 @@ source $HOME/.exports
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github composer zsh_reload z tmux sudo jump catimg colorize colored-man command-not-found cp extract laravel4 laravel)
+plugins=(git github composer zsh_reload z tmux sudo jump catimg colorize colored-man command-not-found cp extract laravel4 laravel tmuxinator symfony2)
 
 source $ZSH/oh-my-zsh.sh

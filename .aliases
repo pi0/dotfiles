@@ -14,6 +14,12 @@ alias du=du -hs
 
 alias ducks='du -ckhs * | sort -rn | head'
 
+alias setclip='xclip -selection c'
+alias getclip='xclip -selection clipboard -o'
+
+alias dl="aria2c"
+alias dlc='dl `getclip`'
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -23,7 +29,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias dl="cd ~/Downloads"
+alias dls="cd ~/Downloads"
 alias t="cd ~/tmp"
 alias p="cd ~/projects"
 alias g="git"
