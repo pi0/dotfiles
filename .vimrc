@@ -1,5 +1,5 @@
 " set the theme
-colorscheme delek
+colorscheme monokai
 
 " Make Vim more useful
 set nocompatible
