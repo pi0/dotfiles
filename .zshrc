@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 DISABLE_AUTO_UPDATE=true
 
 # Set name of the oh-my-zsh theme to load.
-ZSH_THEME="pygmalion"
+ZSH_THEME="../../.theme"
 
 # Local bin
 PATH=$PATH:~/bin
@@ -56,6 +56,6 @@ WINEARCH=win32
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git composer zsh_reload tmux sudo catimg colorize colored-man cp extract tmuxinator laravel z)
+plugins=(git composer zsh_reload tmux sudo catimg colorize colored-man cp extract tmuxinator laravel5 z)
 
 source $ZSH/oh-my-zsh.sh
