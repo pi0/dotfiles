@@ -1,7 +1,8 @@
 #!/bin/bash
 TARGET=$HOME/.dotfiles
 mkdir -p $TARGET
+echo "Downloading dotfiles.."
 curl -#L https://github.com/pi0/dotfiles/archive/master.tar.gz | tar xzf - -C $TARGET
-mv $TARGET/dotfiles-master/* $TARGET
+cp $TARGET/dotfiles-master/* $TARGET
 rm -r $TARGET/dotfiles-master
 $TARGET/install
