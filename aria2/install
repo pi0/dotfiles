@@ -1,1 +1,2 @@
-dotins -r aria2 ~/.aria2
+echo $PWD
+#dotins -r aria2 ~/.aria2

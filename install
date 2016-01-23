@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Get project base dir
 DIR=`dirname "$(readlink -f "$0")"`
@@ -6,6 +6,7 @@ echo "Installing packages from $DIR"
 
 # Source dotlib
 source $DIR/env/dotlib
+export -f dotins
 
 # Install all packages
 for _install in `/bin/find $DIR -mindepth 2 -maxdepth 2 -name install` ; do 
@@ -14,5 +15,5 @@ for _install in `/bin/find $DIR -mindepth 2 -maxdepth 2 -name install` ; do
 		printf "${GREEN}Processing package ${BOLD}[$PACKAGE]${NC}\n"
 
 		# cd to package dir and invoke install script
-		cd `dirname $_install` && ./install
+		cd "`dirname $_install`" && $_install
 done

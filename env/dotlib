@@ -6,7 +6,6 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 BOLD='\033[1m'
 
-#dotins(OPT,SRC,DST) 
 dotins() {
 DIR=`dirname "$(readlink -f "$0")"`
 OPT=$1
@@ -19,7 +18,8 @@ case $OPT in
   ;;
 
 "-r")
-	for i in `PWD=$DIR/$SRC /bin/find *`;do
+	cd $DIR/$SRC
+	for i in `/usr/bin/find *`;do
     if [ -d $i ]; then
 			mkdir -p $DST/$i;
 	  else
@@ -33,4 +33,3 @@ case $OPT in
 esac
 
 }
-export -f dotins
