@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Colors <3
+NC='\033[0m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BOLD='\033[1m'
+
+#dotins(OPT,SRC,DST) 
+dotins() {
+DIR=`dirname "$(readlink -f "$0")"`
+OPT=$1
+SRC=$2
+DST=$3
+
+case $OPT in
+"-l")
+	ln -fs $DIR/$SRC $DST
+  ;;
+
+"-r")
+	for i in `PWD=$DIR/$SRC /bin/find *`;do
+    if [ -d $i ]; then
+			mkdir -p $DST/$i;
+	  else
+			ln -fs $DIR/$SRC/$i $DST/$i;
+	  fi
+	done 
+	;;
+*)
+	printf "${RED}doins() $SRC to $DST faild, invalid option $OPT\n"
+	;;
+esac
+
+}
+export -f dotins
