@@ -1,3 +1,5 @@
 dotins -l gvimrc ~/.gvimrc
 dotins -l vimrc ~/.vimrc
 dotins -r vim ~/.vim
+mkdir -p ~/.vim/backup
+mkdir -p ~/.vim/tmp

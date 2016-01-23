@@ -28,7 +28,7 @@ set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
 
-" Don? add empty newlines at the end of files
+" Don't add empty newlines at the end of files
 set binary
 set noeol
 
@@ -37,7 +37,7 @@ set modeline
 set modelines=4
 
 " Line numbers
-" set number on
+set nu
 
 " Enable syntax highlighting
 syntax on
@@ -46,7 +46,7 @@ syntax on
 " set cursorline
 
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
 
 " Highlight searches
 set hlsearch
@@ -86,7 +86,7 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 
 " Use relative line numbers
-" if exists("&relativenumber")
+"if exists("&relativenumber")
 "	set relativenumber
 "	au BufReadPost * set relativenumber
 "endif
@@ -116,10 +116,18 @@ nnoremap <C-t>     :tabnew<CR>
 " tab navigation like VIM !
 nnoremap zgg  :tabfirst<CR>
 nnoremap zG  :tablast<CR>
+
 nnoremap zj  :tabnext<CR>
+nnoremap zl  :tabnext<CR>
+
 nnoremap zk  :tabprev<CR>
+nnoremap zh  :tabprev<CR>
+
 nnoremap zn  :tabnew<CR>
+nnoremap zc  :tabnew<CR>
+
 nnoremap zm  :tabclose<CR>
+nnoremap zx  :tabclose<CR>
 
 " Arabic support ( Farsi is very buggy :( )
 noremap <C-S-a> :set invarabic<CR>
