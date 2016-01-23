@@ -5,8 +5,11 @@ if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='mvim'
 fi
 
-#Disable wine errors!
+# Disable wine errors!
 export WINEDEBUG=-all
+
+# Add ~bin to path
+export PATH=$PATH:~/bin
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
