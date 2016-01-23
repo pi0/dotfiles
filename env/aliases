@@ -1,12 +1,13 @@
-alias s2="sudo -E zsh"
+alias s2="sudo -E $SHELL"
+alias s2s="sudo -E"
 
-alias apti="sudo apt-get install"
-alias apts="apt-cache search"
-alias	yui="yum install"
-alias yuu="yum update"
+alias apti="sudo apt install -y"
+alias aptif="sudo apt install -y -f"
+alias apts="apt search"
+alias aptu="sudo apt update"
+alias aptuu="sudo apt dist-upgrade"
+
 alias oracle_dl='aria2c --header="Cookie: oraclelicense=a"'
-alias dotupdate="cd /usr/share/dotfiles;sudo git pull;cd -"
-alias dotsave="cd /usr/share/dotfiles && sudo sh -c 'git add --all && git commit && git push' && cd -"
 
 alias hh=hash -r
 
@@ -31,7 +32,7 @@ alias -- -="cd -"
 # Shortcuts
 alias dls="cd ~/Downloads"
 alias t="cd ~/tmp"
-alias p="cd ~/projects"
+alias p="cd ~/Code"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -72,7 +73,8 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+#alias externip="dig +short myip.opendns.com @resolver1.opendns.com"
+#alias externip="curl icanhazip.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
@@ -133,6 +135,7 @@ alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 
 # Disable Spotlight
 alias spotoff="sudo mdutil -a -i off"
+
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
