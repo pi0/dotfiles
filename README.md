@@ -1,13 +1,9 @@
-Yet another dotfiles project !
-===========
+# Dotfiles by pi0
+My Unix config files..
 
-My Unix config files!
-
-## how to install
+## Easy install
 
 ```bash
-base=/usr/share/dotfiles
-sudo -E sh -c "rm -r $base;git clone --recursive https://github.com/pi0/dotfiles.git $base"
-$base/install.sh
+curl -#L pi0.ir/dotfiles | bash
 ```
     
