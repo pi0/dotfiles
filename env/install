@@ -1,0 +1,2 @@
+dotins -l aliases ~/.aliases
+touch ~/.z

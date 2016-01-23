@@ -1,0 +1,1 @@
+dotins -l tmux.conf ~/.tmux.conf

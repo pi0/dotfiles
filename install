@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# Colors <3
+NC='\033[0m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BOLD='\033[1m'
+
+# Function dotins(OPT,SRC,DST) 
+dotins() {
+DIR=`dirname "$(readlink -f "$0")"`
+OPT=$1
+SRC=$2
+DST=$3
+
+case $OPT in
+"-l")
+	ln -fs $DIR/$SRC $DST
+  ;;
+
+"-r")
+	for i in `PWD=$DIR/$SRC /bin/find *`;do
+    if [ -d $i ]; then
+			mkdir -p $DST/$i;
+	  else
+			ln -fs $DIR/$SRC/$i $DST/$i;
+	  fi
+	done 
+	;;
+*)
+	printf "${RED}doins() $SRC to $DST faild, invalid option $OPT\n"
+	;;
+esac
+
+}
+export -f dotins
+
+# Get project base dir
+DIR=`dirname "$(readlink -f "$0")"`
+echo "Installing packages from $DIR"
+DIR=`dirname "$(readlink -f "$0")"`
+
+# Install all Packages
+for _install in `/bin/find $DIR -mindepth 2 -maxdepth 2 -name install` ; do 
+		# Get friendly pakcage name
+		PACKAGE=`basename "$(dirname $_install)"`	
+		printf "${GREEN}Processing package ${BOLD}[$PACKAGE]${NC}\n"
+
+		# cd to package dir and invoke install script
+		cd `dirname $_install` && ./install
+done
+
+printf "${GREEN}Done\n"

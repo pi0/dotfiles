@@ -1,0 +1,4 @@
+dotins -l zshrc ~/.zshrc
+echo "Downloading oh-my-zsh.."
+curl -#L http://github.com/robbyrussell/oh-my-zsh/archive/master.tar.gz | tar xzf -
+dotins -r oh-my-zsh-master ~/.oh-my-zsh
