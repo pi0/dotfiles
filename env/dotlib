@@ -19,6 +19,7 @@ case $OPT in
 
 "-r")
 	cd $DIR/$SRC
+	mkdir -p $DST
 	for i in `/usr/bin/find *`;do
     if [ -d $i ]; then
 			mkdir -p $DST/$i;
