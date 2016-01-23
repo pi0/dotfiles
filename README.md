@@ -1,7 +1,7 @@
-# dotfiles by pi0
+# Dotfiles by pi0
 My Unix config files..
 
-# Easy install
+## Easy install
 
 ```bash
 curl -#L pi0.ir/dotfiles | bash
