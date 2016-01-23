@@ -1,7 +1,7 @@
 dotins -l zshrc ~/.zshrc
-echo "Downloading oh-my-zsh.."
 
 if [ ! -d "oh-my-zsh-master" ] ; then
+echo "Downloading oh-my-zsh.."
 curl -#L http://github.com/robbyrussell/oh-my-zsh/archive/master.tar.gz | tar xzf -
 fi
 
