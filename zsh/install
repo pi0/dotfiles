@@ -1,4 +1,3 @@
-pwd
 dotins -l zshrc ~/.zshrc
 echo "Downloading oh-my-zsh.."
 
