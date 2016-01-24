@@ -9,7 +9,7 @@ source $DIR/env/dotlib
 export -f dotins
 
 # Install all packages
-for _install in `/bin/find $DIR -mindepth 2 -maxdepth 2 -name install` ; do 
+for _install in `/usr/bin/find $DIR -mindepth 2 -maxdepth 2 -name install` ; do 
 		# Get friendly pakcage name
 		PACKAGE=`basename "$(dirname $_install)"`	
 		printf "${GREEN}Processing package ${BOLD}[$PACKAGE]${NC}\n"
