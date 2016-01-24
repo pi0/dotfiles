@@ -1,1 +1,3 @@
 dotins -l tmux.conf ~/.tmux.conf
+echo "Installing rainbarf:
+cpan -i App::rainbarf
