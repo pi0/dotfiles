@@ -1,1 +1,1 @@
-dotins -r bin ~/bin
+dotins -r bin ~/.bin
