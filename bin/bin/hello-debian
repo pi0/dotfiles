@@ -1,3 +1,4 @@
 sudo apt update
 sudo apt dist-upgrade -y
 sudo apt install zsh tmux aria2 zip unzip vim -y
+chsh /bin/zsh
