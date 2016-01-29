@@ -134,3 +134,4 @@ noremap <C-S-a> :set invarabic<CR>
 
 " Reload vim config
 cnoreabbrev reload :so %<CR>
+
