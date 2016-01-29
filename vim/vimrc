@@ -129,9 +129,11 @@ nnoremap zc  :tabnew<CR>
 nnoremap zm  :tabclose<CR>
 nnoremap zx  :tabclose<CR>
 
-" Arabic support ( Farsi is very buggy :( )
-noremap <C-S-a> :set invarabic<CR>
+" Remove dos \r
+nnoremap dm :%s/\r//g <CR>
 
 " Reload vim config
 cnoreabbrev reload :so %<CR>
 
+" Shell
+set shell=zsh
