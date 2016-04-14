@@ -4,6 +4,6 @@ My Unix config files..
 ## Easy install
 
 ```bash
-curl pi0.ir/dotfiles/ | bash
+curl -#L pi0.ir/dotfiles | sh
 ```
     
