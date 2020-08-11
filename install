@@ -1,4 +1,5 @@
 #!/bin/bash
 DIR=`dirname "$(readlink -f "$0")"`
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp -rfv .* ~
+cp -rfv "$DIR/.*" "$HOME"
