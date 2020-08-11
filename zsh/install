@@ -1,6 +1,0 @@
-dotins -l zshrc ~/.zshrc
-
-if [ ! -d "oh-my-zsh-master" ] ; then
-	echo "Downloading oh-my-zsh.."
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi

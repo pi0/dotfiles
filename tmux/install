@@ -1,3 +1,0 @@
-dotins -l tmux.conf ~/.tmux.conf
-#echo "Installing rainbarf"
-#rainbarf 2>&1 >/dev/null || PERL_MM_USE_DEFAULT=1 perl -MCPAN -e 'install App::rainbarf'

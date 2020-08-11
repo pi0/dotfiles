@@ -1,9 +1,5 @@
-# Dotfiles by pi0
-My Unix config files..
-
-## Easy install
+# `.pi0rc`
 
 ```bash
 curl -#L git.io/dot_files | sh
 ```
-    

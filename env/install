@@ -1,3 +1,0 @@
-dotins -l aliases ~/.aliases
-dotins -l exports ~/.exports
-touch ~/.z

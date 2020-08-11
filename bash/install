@@ -1,2 +1,0 @@
-dotins -l bashrc ~/.bashrc
-dotins -l hushlogin ~/.hushlogin
