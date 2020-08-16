@@ -1,6 +1,6 @@
 #!/bin/bash
 DIR=`dirname "$(readlink -f "$0")"`
 
-if [ -d $HOME/.oh-my-zsh ] && rm -rf $HOME/.oh-my-zsh
+[ -d $HOME/.oh-my-zsh ] && rm -rf $HOME/.oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp -rf "$DIR/.*" "$HOME"
