@@ -1,9 +1,5 @@
 #!/bin/bash
 TARGET=$HOME/.dotfiles
 [ -d $TARGET ] && rm -rf $TARGET
-mkdir -p $TARGET
-curl -#L https://github.com/pi0/dotfiles/archive/master.tar.gz | tar xzf - -C $TARGET
-cp -r $TARGET/dotfiles-master/* $TARGET
-cp -r $TARGET/dotfiles-master/.* $TARGET
-rm -r $TARGET/dotfiles-master
+git clone https://github.com/pi0/dotfiles $TARGET
 $TARGET/install
