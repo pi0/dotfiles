@@ -1,5 +1,14 @@
 #!/bin/bash
+
+# This script downloads or updates dotfiles and then do local install
+
 TARGET=$HOME/.dotfiles
-[ -d $TARGET ] && rm -rf $TARGET
-git clone https://github.com/pi0/dotfiles $TARGET
+
+if [ -d $TARGET ]; then
+    cd $TARGET
+    git pull
+else
+    git clone https://github.com/pi0/dotfiles $TARGET
+fi
+
 $TARGET/install

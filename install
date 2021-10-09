@@ -1,5 +1,18 @@
 #!/bin/bash
-DIR=`dirname "$(readlink -f "$0")"`
-[ -d $HOME/.oh-my-zsh ] && rm -rf $HOME/.oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp -r $DIR/. $HOME
+
+# This script LOCALLY installs dotfiles
+
+# Link config files
+for f in ".zshrc .vimrc .tmux.conf .aria2"; do
+ ln -vfs $DIR/$f $HOME
+done
+
+# Install or update oh-my-zsh
+if [ -d $HOME/.oh-my-zsh ]; then
+  pushd $HOME/.oh-my-zsh
+  ./tools/upgrade.sh
+  popd
+else
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+

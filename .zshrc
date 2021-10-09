@@ -1,3 +1,5 @@
+# Setup oh-my-zsh
+
 ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="pygmalion"
@@ -9,7 +11,32 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git zsh_reload tmux sudo extract tmuxinator docker)
 
-source $HOME/.aliases
-source $HOME/.exports
-
 source $ZSH/oh-my-zsh.sh
+
+# Aliases
+
+alias s2="sudo -E $SHELL"
+
+alias apti="sudo apt install -y"
+alias aptu="sudo apt update"
+alias aptdu="sudo apt dist-upgrade"
+
+alias du=du -hs
+
+alias grep=grep --color=auto
+
+alias ducks='du -ckhs * | sort -rn | head'
+
+alias setclip='xclip -selection c'
+alias getclip='xclip -selection clipboard -o'
+
+alias dl="aria2c"
+alias g="git"
+alias dcc="docker-compose"
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# IP addresses
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'; curl 4.icanhazip.com; curl 6.icanhazip.com"
+

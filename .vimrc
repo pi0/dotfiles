@@ -42,9 +42,6 @@ set nu
 " Enable syntax highlighting
 syntax on
 
-" Highlight current line
-" set cursorline
-
 " Make tabs as wide as 4 spaces
 set tabstop=4
 
@@ -78,13 +75,13 @@ set laststatus=2
 " Disable error bells
 set noerrorbells
 
-" Don? reset cursor to start of line when moving around.
+" Don't reset cursor to start of line when moving around.
 set nostartofline
 
 " Show the cursor position
 set ruler
 
-" Don? show the intro message when starting Vim
+" Don't show the intro message when starting Vim
 set shortmess=atI
 
 " Show the current mode
@@ -93,18 +90,8 @@ set showmode
 " Show the filename in the window titlebar
 set title
 
-" Show the (partial) command as it? being typed
+" Show the (partial) command as it is being typed
 set showcmd
-
-" Set swap and backupdir
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
-
-" Use relative line numbers
-"if exists("&relativenumber")
-"	set relativenumber
-"	au BufReadPost * set relativenumber
-"endif
 
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
@@ -120,29 +107,8 @@ endfunction
 
 noremap <leader>ss :call StripWhitespace()<CR>
 
-" Save a file as root :)
+" Save a file as root
 cmap W! w !sudo tee % > /dev/null<CR>:e!<CR><CR> 
-
-" tab navigation like firefox
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-
-" tab navigation like VIM !
-nnoremap zgg  :tabfirst<CR>
-nnoremap zG  :tablast<CR>
-
-nnoremap zj  :tabnext<CR>
-nnoremap zl  :tabnext<CR>
-
-nnoremap zk  :tabprev<CR>
-nnoremap zh  :tabprev<CR>
-
-nnoremap zn  :tabnew<CR>
-nnoremap zc  :tabnew<CR>
-
-nnoremap zm  :tabclose<CR>
-nnoremap zx  :tabclose<CR>
 
 " Remove dos \r
 nnoremap dm :%s/\r//g <CR>
