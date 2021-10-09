@@ -1,5 +1,5 @@
 " set the theme
-colorscheme monokai
+colorscheme desert
 
 " Make Vim more useful
 set nocompatible

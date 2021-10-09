@@ -3,7 +3,8 @@
 # This script LOCALLY installs dotfiles
 
 # Link config files
-for f in ".zshrc .vimrc .tmux.conf .aria2"; do
+DIR=`dirname "$(readlink -f "$0")"`
+for f in .zshrc .vimrc .tmux.conf .aria2; do
  ln -vfs $DIR/$f $HOME
 done
 

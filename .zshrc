@@ -9,7 +9,7 @@ DISABLE_AUTO_UPDATE=true
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git zsh_reload tmux sudo extract tmuxinator docker)
+plugins=(git tmux sudo extract tmuxinator docker)
 
 source $ZSH/oh-my-zsh.sh
 
