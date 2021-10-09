@@ -13,6 +13,10 @@ plugins=(git tmux sudo extract tmuxinator docker)
 
 source $ZSH/oh-my-zsh.sh
 
+# Environment
+
+export EDITOR=vi
+
 # Aliases
 
 alias s2="sudo -E $SHELL"
@@ -34,9 +38,7 @@ alias dl="aria2c"
 alias g="git"
 alias dcc="docker-compose"
 
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
+alias sudo='sudo ' # Enable aliases to be sudo’ed
 
-# IP addresses
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'; curl 4.icanhazip.com; curl 6.icanhazip.com"
 
