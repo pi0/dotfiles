@@ -14,6 +14,6 @@ if [ -d $HOME/.oh-my-zsh ]; then
   ./tools/upgrade.sh
   popd
 else
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
