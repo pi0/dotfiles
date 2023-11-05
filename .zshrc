@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pygmalion"
 ZSH_DISABLE_COMPFIX="true"
 
-DISABLE_AUTO_UPDATE=true
+#DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
@@ -16,6 +16,8 @@ source $ZSH/oh-my-zsh.sh
 # Environment
 
 export EDITOR=vi
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
 
 # Aliases
 
