@@ -11,6 +11,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git tmux sudo extract tmuxinator docker)
 
+# Workaround for https://github.com/ohmyzsh/ohmyzsh/issues/12328
+zstyle ':omz:alpha:lib:git' async-prompt no
+
 source $ZSH/oh-my-zsh.sh
 
 # Environment
